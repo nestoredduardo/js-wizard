@@ -204,3 +204,8 @@ footer {
     width: 300px;
   }
 }
+
+/* Utils */
+.hidden {
+  display: none;
+}

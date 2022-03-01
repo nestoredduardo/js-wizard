@@ -13,16 +13,16 @@
     />
   </head>
   <body>
-    <section class="modal">
-      <div class="modal-main">
-        <button class="close-button">
+    <section class="modal hidden" id="modal">
+      <div class="modal-main" id="modalMain">
+        <button class="close-button" id="closeBtn">
           <img
             class="close-icon"
             src="./src/assets/close.png"
             alt="Cerrar formulario"
           />
         </button>
-        <form class="modal-form">
+        <form class="modal-form" id="form">
           <h2 class="modal-title">Añade un nuevo Link</h2>
           <div class="modal-section">
             <label for="name">Nombre</label>
@@ -41,7 +41,7 @@
       <h1 class="username">@enola</h1>
     </header>
     <main>
-      <button class="addLink-button">Añadir link</button>
+      <button class="addLink-button" id="addLinkBtn">Añadir link</button>
     </main>
     <footer>
       <img class="logo-image" src="./src/assets/logo.png" alt="linkbranch" />
