@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #3a4ffe, #74effa);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.user-image {
+  width: 120px;
+}
+
+.username {
+  margin: 0.5rem 0;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.addLink-button {
+  width: 150px;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  border: none;
+  border-radius: 1rem;
+  background-color: #d900f7;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.addLink-button:hover {
+  background-color: #b606ce;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 30px;
+}
+
+.footer-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: 0.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .addLink-button {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .addLink-button {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .user-image {
+    width: 150px;
+  }
+
+  .addLink-button {
+    width: 300px;
+  }
+}
+
+/* Modal */
+.modal {
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-main {
+  margin: auto;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  width: 300px;
+  height: fit-content;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.close-button:hover {
+  background-color: rgb(160, 160, 160);
+}
+
+.close-icon {
+  width: 30px;
+  border-radius: 30px;
+}
+
+.modal-form {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: 2rem;
+  background: #3a4ffe;
+  background: -webkit-linear-gradient(to right, #3a4ffe 43%, #00e1c9 100%);
+  background: -moz-linear-gradient(to right, #3a4ffe 43%, #00e1c9 100%);
+  background: linear-gradient(to right, #3a4ffe 43%, #00e1c9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
